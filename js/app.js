@@ -7,12 +7,11 @@ addButton.addEventListener("click",function(){ notesUpdate()})
 
 function notesUpdate(){
     const note=document.createElement("div");
-    const title=document.querySelector("#title")
     note.classList.add("note");
     note.innerHTML=`
         <div class="my-2 mx-2 card" style="width: 18rem">
         <div class="card-body">
-          <h5 class="card-title"> ${(title.value==="")?"Note":title.value}</h5>
+          <h5 class="card-title">Note</h5>
           <p class="card-text"></p>
           <a href="#" class="btn btn-primary">Delete</a>
         </div>
@@ -48,3 +47,7 @@ addBtn.addEventListener("click", function(e) {
   console.log(notesObj);
   //showNotes();
 });
+
+
+
+

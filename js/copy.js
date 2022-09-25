@@ -8,9 +8,9 @@ document.addEventListener("DOMContentLoaded",function(){
     try {
         let successful = document.execCommand('copy');
         let msg = successful ? 'successful' : 'unsuccessful';
-        alert('Copy text command was ' + msg);
+        
         } catch(err) {
-              alert('Unable to copy');
+             
             }
     });
 })
