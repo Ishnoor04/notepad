@@ -10,11 +10,13 @@ function notesUpdate(){
     const title=document.querySelector("#title")
     note.classList.add("note");
     note.innerHTML=`
-    <div class="card text-bg-light mb-3">
-            ${(title.value==="")?"Note":title.value}
-            
+        <div class="my-2 mx-2 card" style="width: 18rem">
+        <div class="card-body">
+          <h5 class="card-title"> ${(title.value==="")?"Note":title.value}</h5>
+          <p class="card-text"></p>
+          <a href="#" class="btn btn-primary">Delete</a>
         </div>
-
+      </div>
     `
     sideBar.appendChild(note);
     
@@ -31,3 +33,18 @@ console.log(selection)
 console.log
 text=text.replace(selection,selection.style.fontWeight="bold");
 })
+let addBtn = document.getElementById("addBtn");
+addBtn.addEventListener("click", function(e) {
+  let addTxt = document.getElementById("addTxt");
+  let notes = localStorage.getItem("notes");
+  if (notes == null) {
+    notesObj = [];
+  } else {
+    notesObj = JSON.parse(notes);
+  }
+  notesObj.push(addTxt.value);
+  localStorage.setItem("notes", JSON.stringify(notesObj));
+  addTxt.value = "";
+  console.log(notesObj);
+  //showNotes();
+});
