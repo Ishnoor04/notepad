@@ -13,13 +13,15 @@ function notesUpdate(){
         <div class="card-body">
           <h5 class="card-title">Note</h5>
           <p class="card-text"></p>
-          <a href="#" class="btn btn-primary">Delete</a>
+          <a href="#" class="btn btn-primary">Delete<~/a>
         </div>
       </div>
     `
     sideBar.appendChild(note);
     
 }
+//make sidebar horizontal--
+
 //adding little text in the note from the text area 
 //push a small fontsize=10px into card (showing a glimpse)
 
