@@ -1,5 +1,5 @@
 const sideBar=document.querySelector("#sidebar");
-const addButton=document.querySelector("#add-button");
+const addButton=document.querySelector("#addBtn");
 const bold=document.querySelector("#bold-button")
 
 
@@ -13,7 +13,7 @@ function notesUpdate(){
         <div class="card-body">
           <h5 class="card-title">Note</h5>
           <p class="card-text"></p>
-          <a href="#" class="btn btn-primary">Delete<~/a>
+          <a href="#" class="btn btn-primary">Delete</a>
         </div>
       </div>
     `
