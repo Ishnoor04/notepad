@@ -42,7 +42,7 @@
 				
 				</h5>
 				<div class="form-group">
-					<fieldset class="form-control"
+					<fieldset class="form-control" contenteditable="true"
 						id="addTxt" rows="3">
 					</fieldset>
 				</div>
@@ -51,22 +51,22 @@
 
 				<button 
 					id="addBtn" style=
-					"background-color:rgb(0, 15, 128)">
+					"background-color:rgb(0, 15, 128)" >
 					Add Note
 				</button>
-				<button 
+				<button class="fontStyle"
 					id="bold-button" style=
-					"background-color:rgb(9, 10, 24)">
+					"background-color:rgb(9, 10, 24)" onclick="document.execCommand( 'bold',false,null);">
 					Bold
 				</button>
 				<button 
 					id="underline-button" style=
-					"background-color:rgb(112, 130, 117)">
+					"background-color:rgb(112, 130, 117)" onclick="document.execCommand( 'underline',false,null);">
 					Underline
 				</button>
 				<button 
 					id="italic-button" style=
-					"background-color:rgb(194, 164, 134)">
+					"background-color:rgb(194, 164, 134)" onclick="document.execCommand( 'italic',false,null);">
 					Italic
 				</button>
 				<button 
@@ -93,7 +93,7 @@
 
 	<script src="js/app.js"></script>
      <script src="js/copy.js"></script>
-     <script src="js/button.js"></script>
+     <!-- <script src="js/button.js"></script> -->
 </body>
 
 </html>

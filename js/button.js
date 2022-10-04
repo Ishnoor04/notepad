@@ -8,12 +8,12 @@ document.addEventListener("DOMContentLoaded",function(){
         fileContent.style.textDecoration = "underline";  
     })
 
-    document.getElementById("bold-button").addEventListener("click",function(){
-        if(fileContent.style.fontWeight === "bold")
-        fileContent.style.fontWeight = "normal";
-        else
-        fileContent.style.fontWeight = "bold";  
-    })
+    // document.getElementById("bold-button").addEventListener("click",function(){
+    //     if(fileContent.style.fontWeight === "bold")
+    //     fileContent.style.fontWeight = "normal";
+    //     else
+    //     fileContent.style.fontWeight = "bold";  
+    // })
 
     document.getElementById("italic-button").addEventListener("click", function(){
         if(fileContent.style.fontStyle === "italic")
